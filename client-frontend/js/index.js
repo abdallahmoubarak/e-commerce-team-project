@@ -77,7 +77,6 @@ const sellerCard = (sellers) => {
         </div>
         <p href=""  class="user-card-edit" id='seller-${seller.id}'>more</p>
       </div>
-      <section class="products seller-section" id='${seller.id}'></section>
      `)
   );
   return sellersList;
