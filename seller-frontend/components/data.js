@@ -57,7 +57,7 @@ axios.post(getMessages, params).then((res) => {
 const users = [
   {
     name: "James",
-    img_url: "https://robohash.org/esseautrepellat.png?size=50x50&set=set1",
+    img_url: "https://robohash.org/esseautrepellat.png?size=250x250&set=set1",
   },
 ];
 
@@ -68,181 +68,181 @@ const products = [
     name: "Avalon",
     category: "Mazda",
     price: "$192.81",
-    img: "https://robohash.org/quirerumpraesentium.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/system_product/70000/64800/64624/1-192x264.jpg",
   },
   {
     name: "Relay",
     category: "Chevrolet",
     price: "$52.88",
-    img: "https://robohash.org/autveniamsoluta.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/system_product/30000/29600/29485/01-192x264.jpg",
   },
   {
     name: "Quest",
     category: "Toyota",
     price: "$79.54",
-    img: "https://robohash.org/modiautnisi.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/system_product/70000/62800/62712/010101-192x264.jpg",
   },
   {
     name: "Traverse",
     category: "Chevrolet",
     price: "$3.98",
-    img: "https://robohash.org/etculpapraesentium.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/system_product/80000/72800/72613/bb-192x264.jpg",
   },
   {
     name: "5 Series",
     category: "BMW",
     price: "$167.44",
-    img: "https://robohash.org/rerumautsed.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/system_product/70000/64200/64125/aa1-192x264.jpg",
   },
   {
     name: "Passport",
     category: "Chevrolet",
     price: "$194.17",
-    img: "https://robohash.org/providentquisuscipit.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/system_product/60000/55000/54862/kkkkkk-192x264.jpg",
   },
   {
     name: "Altima",
     category: "Nissan",
     price: "$36.74",
-    img: "https://robohash.org/exercitationemnostrumaccusantium.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/system_product/70000/60800/60614/A1-192x264.jpg",
   },
   {
     name: "Sportage",
     category: "Kia",
     price: "$17.91",
-    img: "https://robohash.org/eaquenumquamaut.png?size=50x50&set=set1",
+    img: "https://www.ishtari.com/image/cache/data/abx/1000-1100/abx1024/1-192x264.jpg",
   },
   {
     name: "RX",
     category: "Lexus",
     price: "$17.48",
-    img: "https://robohash.org/sequiquonumquam.png?size=50x50&set=set1",
+    img: "https://robohash.org/sequiquonumquam.png?size=250x250&set=set1",
   },
   {
     name: "SL-Class",
     category: "Mercedes-Benz",
     price: "$117.11",
-    img: "https://robohash.org/voluptatesminustempora.png?size=50x50&set=set1",
+    img: "https://robohash.org/voluptatesminustempora.png?size=250x250&set=set1",
   },
   {
     name: "Cutlass Cruiser",
     category: "Toyota",
     price: "$164.79",
-    img: "https://robohash.org/minuscumaccusamus.png?size=50x50&set=set1",
+    img: "https://robohash.org/minuscumaccusamus.png?size=250x250&set=set1",
   },
   {
     name: "Cherokee",
     category: "Chevrolet",
     price: "$125.40",
-    img: "https://robohash.org/rerumvoluptasamet.png?size=50x50&set=set1",
+    img: "https://robohash.org/rerumvoluptasamet.png?size=250x250&set=set1",
   },
   {
     name: "I",
     category: "Toyota",
     price: "$170.79",
-    img: "https://robohash.org/etsedfugit.png?size=50x50&set=set1",
+    img: "https://robohash.org/etsedfugit.png?size=250x250&set=set1",
   },
   {
     name: "Yukon",
     category: "Chevrolet",
     price: "$166.68",
-    img: "https://robohash.org/atmaximeassumenda.png?size=50x50&set=set1",
+    img: "https://robohash.org/atmaximeassumenda.png?size=250x250&set=set1",
   },
   {
     name: "X5",
     category: "Toyota",
     price: "$5.09",
-    img: "https://robohash.org/quaeratipsaquia.png?size=50x50&set=set1",
+    img: "https://robohash.org/quaeratipsaquia.png?size=250x250&set=set1",
   },
   {
     name: "Milan",
     category: "Toyota",
     price: "$96.73",
-    img: "https://robohash.org/uteosporro.png?size=50x50&set=set1",
+    img: "https://robohash.org/uteosporro.png?size=250x250&set=set1",
   },
   {
     name: "LR4",
     category: "Land Rover",
     price: "$43.98",
-    img: "https://robohash.org/occaecatidoloremin.png?size=50x50&set=set1",
+    img: "https://robohash.org/occaecatidoloremin.png?size=250x250&set=set1",
   },
   {
     name: "G-Class",
     category: "Mercedes-Benz",
     price: "$21.40",
-    img: "https://robohash.org/eligendidictainventore.png?size=50x50&set=set1",
+    img: "https://robohash.org/eligendidictainventore.png?size=250x250&set=set1",
   },
   {
     name: "LX",
     category: "Toyota",
     price: "$46.44",
-    img: "https://robohash.org/addoloreveritatis.png?size=50x50&set=set1",
+    img: "https://robohash.org/addoloreveritatis.png?size=250x250&set=set1",
   },
   {
     name: "Vantage",
     category: "Aston Martin",
     price: "$155.61",
-    img: "https://robohash.org/voluptassaepealiquam.png?size=50x50&set=set1",
+    img: "https://robohash.org/voluptassaepealiquam.png?size=250x250&set=set1",
   },
   {
     name: "Nitro",
     category: "Toyota",
     price: "$175.78",
-    img: "https://robohash.org/hicquidistinctio.png?size=50x50&set=set1",
+    img: "https://robohash.org/hicquidistinctio.png?size=250x250&set=set1",
   },
   {
     name: "GTI",
     category: "Volkswagen",
     price: "$102.09",
-    img: "https://robohash.org/nesciuntaccusamusea.png?size=50x50&set=set1",
+    img: "https://robohash.org/nesciuntaccusamusea.png?size=250x250&set=set1",
   },
   {
     name: "XK",
     category: "Toyota",
     price: "$146.54",
-    img: "https://robohash.org/autemconsequaturet.png?size=50x50&set=set1",
+    img: "https://robohash.org/autemconsequaturet.png?size=250x250&set=set1",
   },
   {
     name: "PT Cruiser",
     category: "Toyota",
     price: "$113.32",
-    img: "https://robohash.org/ducimusestet.png?size=50x50&set=set1",
+    img: "https://robohash.org/ducimusestet.png?size=250x250&set=set1",
   },
   {
     name: "XJ",
     category: "Jaguar",
     price: "$100.40",
-    img: "https://robohash.org/blanditiisearumcommodi.png?size=50x50&set=set1",
+    img: "https://robohash.org/blanditiisearumcommodi.png?size=250x250&set=set1",
   },
   {
     name: "S10",
     category: "Chevrolet",
     price: "$32.77",
-    img: "https://robohash.org/quoetnihil.png?size=50x50&set=set1",
+    img: "https://robohash.org/quoetnihil.png?size=250x250&set=set1",
   },
   {
     name: "Sierra 1500",
     category: "Toyota",
     price: "$181.22",
-    img: "https://robohash.org/etquissoluta.png?size=50x50&set=set1",
+    img: "https://robohash.org/etquissoluta.png?size=250x250&set=set1",
   },
   {
     name: "M3",
     category: "BMW",
     price: "$177.74",
-    img: "https://robohash.org/voluptasvoluptasrepudiandae.png?size=50x50&set=set1",
+    img: "https://robohash.org/voluptasvoluptasrepudiandae.png?size=250x250&set=set1",
   },
   {
     name: "RX-7",
     category: "BMW",
     price: "$19.28",
-    img: "https://robohash.org/praesentiumreprehenderiteos.png?size=50x50&set=set1",
+    img: "https://robohash.org/praesentiumreprehenderiteos.png?size=250x250&set=set1",
   },
   {
     name: "9000",
     category: "Chevrolet",
     price: "$19.58",
-    img: "https://robohash.org/noncorporissapiente.png?size=50x50&set=set1",
+    img: "https://robohash.org/noncorporissapiente.png?size=250x250&set=set1",
   },
 ];
 
@@ -352,13 +352,10 @@ const ads = [
     img: "https://source.unsplash.com/random",
   },
   {
-    img: "https://robohash.org/quisliberodolores.png?size=50x50&set=set1",
+    img: "https://robohash.org/quisliberodolores.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/temporerecusandaeex.png?size=50x50&set=set1",
-  },
-  {
-    img: "https://source.unsplash.com/random",
+    img: "https://robohash.org/temporerecusandaeex.png?size=250x250&set=set1",
   },
   {
     img: "https://source.unsplash.com/random",
@@ -367,7 +364,10 @@ const ads = [
     img: "https://source.unsplash.com/random",
   },
   {
-    img: "https://robohash.org/rerumculpadolorem.png?size=50x50&set=set1",
+    img: "https://source.unsplash.com/random",
+  },
+  {
+    img: "https://robohash.org/rerumculpadolorem.png?size=250x250&set=set1",
   },
   {
     img: "hhttps://source.unsplash.com/random",
@@ -376,77 +376,77 @@ const ads = [
     img: "https://source.unsplash.com/random",
   },
   {
-    img: "https://robohash.org/esteiusdolores.png?size=50x50&set=set1",
+    img: "https://robohash.org/esteiusdolores.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/exercitationemculpanatus.png?size=50x50&set=set1",
+    img: "https://robohash.org/exercitationemculpanatus.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/quasiperspiciatisconsequatur.png?size=50x50&set=set1",
+    img: "https://robohash.org/quasiperspiciatisconsequatur.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/rerumquiaquasi.png?size=50x50&set=set1",
+    img: "https://robohash.org/rerumquiaquasi.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/voluptatevoluptatemfuga.png?size=50x50&set=set1",
+    img: "https://robohash.org/voluptatevoluptatemfuga.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/possimusfacilisearum.png?size=50x50&set=set1",
+    img: "https://robohash.org/possimusfacilisearum.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/voluptasetquasi.png?size=50x50&set=set1",
+    img: "https://robohash.org/voluptasetquasi.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/verosedat.png?size=50x50&set=set1",
+    img: "https://robohash.org/verosedat.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/undeetab.png?size=50x50&set=set1",
+    img: "https://robohash.org/undeetab.png?size=250x250&set=set1",
   },
   {
-    img: "https://robohash.org/autquasisuscipit.png?size=50x50&set=set1",
+    img: "https://robohash.org/autquasisuscipit.png?size=250x250&set=set1",
   },
 ];
 
 // used for inbox
 const clients = [
   {
-    img: "https://robohash.org/recusandaeharumvoluptatum.png?size=50x50&set=set1",
+    img: "https://robohash.org/recusandaeharumvoluptatum.png?size=250x250&set=set1",
     username: "Cherri",
   },
   {
-    img: "https://robohash.org/dolorumquibusdamquia.png?size=50x50&set=set1",
+    img: "https://robohash.org/dolorumquibusdamquia.png?size=250x250&set=set1",
     username: "Leonie",
   },
   {
-    img: "https://robohash.org/velfugaest.png?size=50x50&set=set1",
+    img: "https://robohash.org/velfugaest.png?size=250x250&set=set1",
     username: "Tatiania",
   },
   {
-    img: "https://robohash.org/veldistinctioaliquam.png?size=50x50&set=set1",
+    img: "https://robohash.org/veldistinctioaliquam.png?size=250x250&set=set1",
     username: "Aleksandr",
   },
   {
-    img: "https://robohash.org/sedquibusdamvelit.png?size=50x50&set=set1",
+    img: "https://robohash.org/sedquibusdamvelit.png?size=250x250&set=set1",
     username: "Pru",
   },
   {
-    img: "https://robohash.org/etquiin.png?size=50x50&set=set1",
+    img: "https://robohash.org/etquiin.png?size=250x250&set=set1",
     username: "Alyse",
   },
   {
-    img: "https://robohash.org/quidemquisvoluptas.png?size=50x50&set=set1",
+    img: "https://robohash.org/quidemquisvoluptas.png?size=250x250&set=set1",
     username: "Fin",
   },
   {
-    img: "https://robohash.org/idexplicabomaiores.png?size=50x50&set=set1",
+    img: "https://robohash.org/idexplicabomaiores.png?size=250x250&set=set1",
     username: "Kaitlin",
   },
   {
-    img: "https://robohash.org/accusantiumdictamolestiae.png?size=50x50&set=set1",
+    img: "https://robohash.org/accusantiumdictamolestiae.png?size=250x250&set=set1",
     username: "Ursala",
   },
   {
-    img: "https://robohash.org/estautsit.png?size=50x50&set=set1",
+    img: "https://robohash.org/estautsit.png?size=250x250&set=set1",
     username: "Reginald",
   },
 ];

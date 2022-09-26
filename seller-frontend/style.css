@@ -17,9 +17,22 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: unset;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Nunito, sans-serif;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -60,7 +73,7 @@ h3 {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 50%;
-  background-color: var(--primary-sharp);
+  background-color: #eee;
   cursor: pointer;
 }
 
@@ -68,6 +81,7 @@ h3 {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 /* side-nav */
@@ -115,7 +129,7 @@ h3 {
 
 .side-nav-tab-container {
   height: 100%;
-  padding-left: 2rem;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -218,15 +232,14 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 .pages-select-container select {
   font-size: 1.5rem;
   width: 100%;
-  height: 2rem;
-  margin: 0.1rem;
   border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
 }
 
 /* End of Utilities */
@@ -478,7 +491,10 @@ h3 {
 }
 
 .inputs-container {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0.2rem;
+  gap: 1rem;
 }
 
 .sign-btn {
@@ -504,8 +520,9 @@ h3 {
   background-color: var(--grey);
   justify-content: space-between;
   align-items: center;
-  height: 7rem;
   display: none;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
 .popup input {
@@ -514,6 +531,7 @@ h3 {
   padding-right: 0.2rem;
   margin-right: 1rem;
   margin-left: 0.1rem;
+  flex: 1 1 100%;
 }
 
 .popup-close-btn {
@@ -528,9 +546,22 @@ h3 {
   width: 5rem;
   height: 2rem;
   background-color: var(--primary-sharp);
-  border: none;
   border-radius: 1rem;
   font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+input {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border: none;
+  outline: none;
 }
 
 .popup-products input,
