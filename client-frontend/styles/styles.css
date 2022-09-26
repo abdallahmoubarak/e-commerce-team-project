@@ -6,7 +6,7 @@
   text-decoration: unset;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  font-family: sans-serif;
+  font-family: Nunito;
   -ms-scroll-chaining: none;
   overscroll-behavior: contain;
   -ms-overflow-style: none;
@@ -273,7 +273,7 @@ img {
 }
 .nav-icon > p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #54549f;
   font-weight: 700;
 }
@@ -285,8 +285,7 @@ img {
 .image {
   display: flex;
   width: 100%;
-  padding: 0 4rem;
-
+  padding: 0;
   justify-content: center;
   align-items: center;
   height: 15rem;

@@ -1,5 +1,5 @@
-const labelContainer = (icon, title, number) => {
-  return `<div class="label-container">
+const labelContainer = (icon, title, number, extraClass) => {
+  return `<div class="label-container ${extraClass}">
             <div class="label-with-icon">
               <div>
                 <img alt="" src="./assets/${icon}.svg" />
@@ -85,15 +85,30 @@ const switcher = (type) => {
 const statisticRender = () => {
   let page =
     "<div class='statistics-cards-container'><div class='statistics-card'>";
-  page += labelContainer("products-icon", "Total # of products", 300);
+  page += labelContainer(
+    "products-icon",
+    "Total # of products",
+    300,
+    "label-extra"
+  );
   page += labelContainer("trophy-icon", "Top sold products", "");
   page += soldProductsContainer(soldProducts);
   page += "</div><div class='statistics-card'>";
-  page += labelContainer("sellers-black-icon", "Total # of sellers", 230);
+  page += labelContainer(
+    "sellers-black-icon",
+    "Total # of sellers",
+    230,
+    "label-extra"
+  );
   page += labelContainer("trophy-icon", "Top Sellers", "");
   page += tabComponent(sellers, "sellers");
   page += "</div><div class='statistics-card'>";
-  page += labelContainer("clients-black-icon", "Total # of clients", 530);
+  page += labelContainer(
+    "clients-black-icon",
+    "Total # of clients",
+    530,
+    "label-extra"
+  );
   page += labelContainer("trophy-icon", "Top Clients", "");
   page += tabComponent(clients, "clients");
   page += "</div></div>";

@@ -204,6 +204,16 @@ body {
   padding: 1rem;
   padding-bottom: 0;
 }
+.label-extra {
+  background: #fbfbfb;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
+  border: 1px solid #54549f;
+}
 
 .label-with-icon {
   display: flex;
@@ -272,12 +282,19 @@ body {
 /* tab */
 
 .tab-component {
+  border: 1px solid #eee;
+  border-top: none;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
 }
 .tabs-container {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 0rem 1.3rem;
+  padding-right: 1.3rem;
 }
 .tab {
   border-radius: 0.3rem 0.3rem 0rem 0rem;
