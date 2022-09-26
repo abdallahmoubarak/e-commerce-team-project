@@ -131,6 +131,7 @@ img {
   padding: 0.6rem 1.2rem;
   border-radius: 0.6rem;
   border-style: none;
+  cursor: pointer;
 }
 
 .input {
@@ -287,7 +288,6 @@ img {
   padding: 0;
   justify-content: center;
   align-items: center;
-  height: 15rem;
 }
 
 @media screen and (max-width: 31.25rem) {
@@ -372,7 +372,7 @@ img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: #999999;
+  background-color: #eee;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
