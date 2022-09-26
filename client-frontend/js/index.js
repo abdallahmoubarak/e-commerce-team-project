@@ -2,27 +2,32 @@ const imgArray = [
   {
     id: 1,
     seller_id: 1,
-    image: "http://dummyimage.com/159x100.png/ff4444/ffffff",
+    image:
+      "https://www.ishtari.com/image/data/system_banner/10000/400/376/backpack-web.png",
   },
   {
     id: 2,
     seller_id: 2,
-    image: "http://dummyimage.com/168x100.png/ff4444/ffffff",
+    image:
+      "https://www.ishtari.com/image/data/system_banner/10000/400/376/grillsweb2-copy.png",
   },
   {
     id: 3,
     seller_id: 3,
-    image: "http://dummyimage.com/112x100.png/cc0000/ffffff",
+    image:
+      "https://www.ishtari.com/image/data/system_banner/10000/400/376/eiffel-chairs.png",
   },
   {
     id: 4,
     seller_id: 4,
-    image: "http://dummyimage.com/246x100.png/cc0000/ffffff",
+    image:
+      "https://www.ishtari.com/image/data/system_banner/10000/400/376/tablet-web-.png",
   },
   {
     id: 5,
     seller_id: 5,
-    image: "http://dummyimage.com/219x100.png/cc0000/ffffff",
+    image:
+      "https://www.ishtari.com/image/data/system_banner/10000/400/376/office-chair.png",
   },
 ];
 
@@ -61,7 +66,12 @@ const homeRender = () => {
       document.getElementById("products-list").innerHTML =
         productCard(products);
     });
-  clicked();
+  const cardClick = document.querySelectorAll(".clicked");
+  cardClick.forEach((element) => {
+    element.onclick = () => {
+      renderProduct(element.id);
+    };
+  });
 };
 
 const sellerCard = (sellers) => {
@@ -105,16 +115,6 @@ const sellerRender = () => {
           })
       );
     });
-
-  // console.log(document.querySelectorAll(".seller-section"));
-  // sellers.map((seller) => {
-  //   document.getElementById(seller.id).innerHTML = productCard(
-  //     products.filter((item) => item.seller_id == seller.id).slice(0, 4)
-  //   );
-  // });
-  // console.log(sellers);
-
-  clicked();
 };
 
 const searchRender = () => {
@@ -133,7 +133,12 @@ const searchRender = () => {
     <!-- end ads section -->`;
   document.getElementById("products-list").innerHTML = productCard(productss);
 
-  clicked();
+  const cardClick = document.querySelectorAll(".clicked");
+  cardClick.forEach((element) => {
+    element.onclick = () => {
+      renderProduct(element.id);
+    };
+  });
 };
 const cartRender = () => {
   document.getElementById("app-body").innerHTML = `
@@ -149,12 +154,18 @@ const cartRender = () => {
     )
     .then((res) => {
       products = res.data;
-      document.getElementById("checkout-list").innerHTML =
-        checkoutCard(productss);
+      document.getElementById("checkout-list").innerHTML = checkoutCard(
+        productss.slice(0, 4)
+      );
     });
 
   document.getElementById("checkout").innerHTML = checkout();
-  clicked();
+  const cardClick = document.querySelectorAll(".clicked");
+  cardClick.forEach((element) => {
+    element.onclick = () => {
+      renderProduct(element.id);
+    };
+  });
 };
 const moreRender = () => {
   document.getElementById("app-body").innerHTML = `
@@ -165,10 +176,6 @@ const moreRender = () => {
 <div class="more-lists" id="favorite-products-list"><div>
 `;
 
-  document.getElementById("favorite-products-list").innerHTML = favoriteCard(
-    products.slice(0, 3)
-  );
-
   const wish = document.createElement("section");
   wish.innerHTML = `<div class="top-section">
 <h1>Wishlist</h1>
@@ -178,10 +185,6 @@ const moreRender = () => {
 `;
   document.getElementById("app-body").append(wish);
 
-  document.getElementById("wishlist-products-list").innerHTML = wishlistCard(
-    products.slice(0, 3)
-  );
-
   document.getElementById("favorite-page").onclick = () => {
     position = "favorite";
     renderFavorite();
@@ -190,7 +193,27 @@ const moreRender = () => {
     position = "wishlist";
     renderWishlist();
   };
-  clicked();
+  const cardClick = document.querySelectorAll(".clicked");
+  cardClick.forEach((element) => {
+    element.onclick = () => {
+      renderProduct(element.id);
+    };
+  });
+
+  axios
+    .get(
+      "http://localhost/e-commerce-team-project/server/api/products/get_all_products.php"
+    )
+    .then((res) => {
+      products = res.data;
+      productss = products;
+
+      document.getElementById("favorite-products-list").innerHTML =
+        favoriteCard(productss.slice(0, 3));
+
+      document.getElementById("wishlist-products-list").innerHTML =
+        wishlistCard(productss.slice(0, 3));
+    });
 };
 
 window.onload = (event) => {

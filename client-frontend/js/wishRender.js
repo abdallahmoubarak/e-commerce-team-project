@@ -6,8 +6,9 @@ const renderWishlist = () => {
       </div>
       <div class="more-lists" id="wishlist-products-list"><div>
       `;
-  document.getElementById("wishlist-products-list").innerHTML =
-    wishlistCard(products);
+  document.getElementById("wishlist-products-list").innerHTML = wishlistCard(
+    products.slice(0, 10)
+  );
 
   document.getElementById("more").onclick = () => {
     position = "more";
