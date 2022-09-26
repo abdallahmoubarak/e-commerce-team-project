@@ -28,7 +28,7 @@ const imgArray = [
 
 let curIndex = 0;
 let imgDuration = 2000;
-var productss;
+let productss;
 
 function slideShow() {
   document.getElementById("image1").src = imgArray[curIndex].image;
@@ -77,7 +77,6 @@ const sellerCard = (sellers) => {
         </div>
         <p href=""  class="user-card-edit" id='seller-${seller.id}'>more</p>
       </div>
-      <section class="products seller-section" id='${seller.id}'></section>
      `)
   );
   return sellersList;
@@ -99,6 +98,12 @@ const sellerRender = () => {
     .then((res) => {
       sellers = res.data;
       document.getElementById("sellers-list").innerHTML = sellerCard(sellers);
+      sellers.map(
+        (seller) =>
+          (document.getElementById(`seller-${seller.id}`).onclick = () => {
+            storeProduct(seller.id);
+          })
+      );
     });
 
   // console.log(document.querySelectorAll(".seller-section"));
@@ -108,12 +113,7 @@ const sellerRender = () => {
   //   );
   // });
   // console.log(sellers);
-  // sellers.map(
-  //   (seller) =>
-  //     (document.getElementById(`seller-${seller.id}`).onclick = () => {
-  //       storeProduct(seller.id);
-  //     })
-  // );
+
   clicked();
 };
 
@@ -143,7 +143,16 @@ const cartRender = () => {
     <section class="products" id="checkout-list"></section>
     <section class="checkout-section" id ="checkout"></section>
     <div>`;
-  document.getElementById("checkout-list").innerHTML = checkoutCard(productss);
+  axios
+    .get(
+      "http://localhost/e-commerce-team-project/server/api/orders/get_user_order.php"
+    )
+    .then((res) => {
+      products = res.data;
+      document.getElementById("checkout-list").innerHTML =
+        checkoutCard(productss);
+    });
+
   document.getElementById("checkout").innerHTML = checkout();
   clicked();
 };
