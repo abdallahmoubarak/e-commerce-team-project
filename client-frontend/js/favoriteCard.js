@@ -1,28 +1,43 @@
-const checkout = () => {
-  const checkout_section = `<div class="checkout-container">
-    <h1>Checkout</h1>
-    <div class="checkout-details">
-      <input
-        class="input quantity-input"
-        type="number"
-        name=""
-        id=""
-        min="1"
-        placeholder="Quantity"
-      />
-      <h2>Total = <span class="total-price" id="total-price"></span></h2>
-      <div class="checkout-voucher">
-        <input
-          class="input voucher-input"
-          type="text"
-          name=""
-          id=""
-          placeholder="Apply voucher"
-        />
-        <button class="button apply-btn">Apply</button>
-      </div>
-      <button class="button buy-btn">Buy Now</button>
-    </div>
-  </div>`;
-  return checkout_section;
+const favoriteCard = (products) => {
+  let favList = "";
+  products.map(
+    (product, i) =>
+      (favList += `<div class="product-card"">
+        <div class="product-card-img-container clicked"  id="${product.id}">
+          <img
+            class="product-card-img"
+            src=${product.picture_img}
+            alt=""
+           
+          />
+        </div>
+        <div class="card-info">
+          <div class="product-card-info">
+            <div class="product-name-seller">
+              <p class="product-name">${product.name}</p>
+            </div>
+  
+            <div class="product-price">
+              <p class="price">${product.price}</p>
+              <p class="discount">Discount</p>
+            </div>
+            <div class="product-card-icons">
+              <div class="product-card-icon">
+                <img alt="" class="like" src="./images/add-to-cart.svg" />
+              </div>
+              <div class="product-card-icon">
+                <img alt="" class="like" src="./images/like.svg" />
+              </div>
+            </div>
+          </div>
+  
+          <div class="product-card-actions">
+            <div></div>
+            <img alt="" class="like" src="./images/remove.svg" />
+            <div></div>
+          </div>
+        </div>
+      </div>`)
+  );
+  return favList;
 };

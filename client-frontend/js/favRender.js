@@ -6,8 +6,9 @@ const renderFavorite = () => {
       </div>
       <div class="more-lists" id="favorite-products-list"><div>
       `;
-  document.getElementById("favorite-products-list").innerHTML =
-    favoriteCard(products);
+  document.getElementById("favorite-products-list").innerHTML = favoriteCard(
+    products.slice(0, 5)
+  );
 
   document.getElementById("more").onclick = () => {
     position = "more";
