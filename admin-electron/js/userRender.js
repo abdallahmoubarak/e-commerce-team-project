@@ -1,5 +1,6 @@
+// declaring card function
+
 const userRender = (id) => {
-  //   axios.fetch("");
   user = sellers.concat(clients).filter((seller) => seller.id == id)[0];
 
   return `<div class='edit-page'>

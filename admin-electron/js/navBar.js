@@ -1,3 +1,5 @@
+// declaring nav bar
+
 const navBar = () => {
   return `<div class="nav-icon" id="nav-sellers-btn">
     <img id='img' src="./assets/sellers-active-icon.svg" alt="" />

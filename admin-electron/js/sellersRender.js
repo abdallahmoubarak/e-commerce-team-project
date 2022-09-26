@@ -1,3 +1,5 @@
+// declaring seller page
+
 const sellersRender = () => {
   document.getElementById("app-body").innerHTML = uList("Sellers", "+");
 

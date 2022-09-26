@@ -1,3 +1,5 @@
+// declaring user list
+
 const uList = (usertype, option = "") => {
   return `<div class='uList'>
   <div class='uList-title'>

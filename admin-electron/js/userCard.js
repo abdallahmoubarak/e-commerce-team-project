@@ -3,6 +3,7 @@ const banAPI =
 const editAPI =
   "http://localhost/e-commerce-team-project/server/api/users/edit.php";
 
+// declaring user card
 const userCard = (users, option = "Edit") => {
   var usersList = "";
   users.map(
@@ -20,6 +21,7 @@ const userCard = (users, option = "Edit") => {
   return usersList;
 };
 
+// looping over user card to get the option needed
 const loopingOverUserCards = () => {
   // functioning each element
   let editUser = document.querySelectorAll(".user-card-edit");
@@ -61,7 +63,5 @@ const loopingOverUserCards = () => {
         axios.post(editAPI, params).then((res) => console.log(res.data));
       };
     };
-
-    // instead of alert we are going to fetch
   });
 };

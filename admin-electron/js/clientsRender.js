@@ -1,3 +1,5 @@
+// declaring client page
+
 const clientsRender = () => {
   document.getElementById("app-body").innerHTML = uList("Clients");
 

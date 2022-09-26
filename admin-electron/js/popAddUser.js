@@ -1,6 +1,8 @@
 const addSellerAPI =
   "http://localhost/e-commerce-team-project/server/api/sellers/add.php";
 
+// declaring pop up user
+
 const popAddUser = () => {
   return `
   <div class="pop-up">

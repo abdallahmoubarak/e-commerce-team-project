@@ -1,3 +1,5 @@
+// declaring label
+
 const labelContainer = (icon, title, number, extraClass) => {
   return `<div class="label-container ${extraClass}">
             <div class="label-with-icon">
@@ -9,6 +11,8 @@ const labelContainer = (icon, title, number, extraClass) => {
             <h2>${number}</h2>
           </div>`;
 };
+
+// declaring sold product card
 
 const soldProductCard = (img, name, pices) => {
   return `<div class='stat-product-card'>
@@ -39,6 +43,8 @@ const soldProductsContainer = (soldProducts) => {
   });
   return `<div class='sold-products-container'>${soldProductsList}</div>`;
 };
+
+// declaring tab container
 
 const tabComponent = (users, type) => {
   return `<div class='tab-component'>
@@ -80,7 +86,7 @@ const switcher = (type) => {
   };
 };
 
-// main function
+// main static page rendering function
 
 const statisticRender = () => {
   let page =
