@@ -1,6 +1,22 @@
-# e-commerce-team-project
+# E-commerce Team Project
 
-Group Project II: E-Commerce Build your own-designed E-Commerce Project following the below requirements: The project should have three user types: Admin, Client, Seller.
+⭐ Implement an e-commerce using PHP, Html, CSS, Javascript and MySQL
+
+##### Stack:
+
+<p align='left'>
+<img src='./src/html.svg' width='50' alt=''>
+<img src='./src/css.svg' width='50' alt=''>
+<img src='./src/javascript.svg' width='50' alt=''>
+<img src='./src/php.svg' height='50' alt=''>
+<img src='./src/mysql.svg' height='50' alt=''>
+</p>
+
+---
+
+#### 🎯 Requirements
+
+⭐ Build your own-designed E-Commerce Project following the below requirements: The project should have three user types: Admin, Client, Seller.
 
 - Admin:
 
@@ -37,13 +53,15 @@ Group Project II: E-Commerce Build your own-designed E-Commerce Project followin
 
 Start designing the wireframes and the mockups. Julien can meet up with you tomorrow only. Please team leaders book a meeting with him ASAP. Ugly projects will lead to immediate contract termination. You are asked to use Jira (Project Tracking Software for Agile Methodology) and to do standup meetings everyday. Team Leaders should have 5 different screenshots or other types of proofs during the presentation day. Team Leaders should learn Jira, understand it, and pitch it in front of the team members. Teams who link Jira to their GitHub Repos will have an advantage! You will be using GitHub with different branches. Pull Requests are big plus. Team Leader is the only one who is allowed to merge branches to Main / Origin. You are obliged to use Axios through the whole project. Bonus: Implement a lottery system. Clients choose a combination of three numbers. Admins trigger the draw. If 3 numbers are matched, respective clients win 100$ Voucher. Else if 2 numbers are matched, 50$ voucher. Else, 20$ Voucher. <br/>
 
-Deadline: Sunday 25th at 11:59 PM. Deliverable: One Repo Link (containing four folders: client-frontend, seller-frontend, admin-electron, and ecommerce-server) Enjoy the Process !
+📅 Deadline: Sunday 25th at 11:59 PM. Deliverable: 
+
+One Repo Link (containing four folders: client-frontend, seller-frontend, admin-electron, and ecommerce-server) Enjoy the Process !
 
 ---
 
 ## TEAM Members
 
-#### - Team Leader & admin side - frontend developer:
+#### ✨ Team Leader & admin side - frontend developer:
 
 <a href='https://github.com/abdallahmoubarak'>Abdallah Moubarak<p><img width='150' src="https://avatars.githubusercontent.com/u/112470831?v=4" alt='' /></p></a>
 
@@ -78,7 +96,7 @@ img[src$="center"]
 }
 </style>
 
-## Project Process
+## 🎯 Project Process
 
 #### Stage 1: Creating ER diagram for the project
 
@@ -113,14 +131,6 @@ img[src$="center"]
 #### Stage 4: Creating four branches for the project
 
 repo link : https://github.com/abdallahmoubarak/e-commerce-team-project
-
-<p align='center'>
-<img src='./src/html.svg' width='50' alt=''>
-<img src='./src/css.svg' width='50' alt=''>
-<img src='./src/javascript.svg' width='50' alt=''>
-<img src='./src/php.svg' height='50' alt=''>
-<img src='./src/mysql.svg' height='50' alt=''>
-</p>
 
 - Substage 1 : developing frontend pages using (html - css- js)
 - Substage 2 : implementing database
